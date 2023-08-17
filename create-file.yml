@@ -1,0 +1,10 @@
+---
+- name: This palybook will create a file
+  hosts: all
+  become: true
+  tasks:
+    - name: create a file
+      file:
+       path: /home/ubuntu/test-file.txt
+       state: touch
+...
